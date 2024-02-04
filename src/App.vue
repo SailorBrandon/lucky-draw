@@ -27,7 +27,7 @@
     </div>
     <transition name="bounce">
       <div id="resbox" v-show="showRes">
-        <p @click="showRes = false">{{ categoryName }}抽奖结果：</p>
+        <p @click="showRes = false">{{ categoryName }}：</p>
         <div class="container">
           <span
             v-for="item in resArr"
@@ -374,7 +374,7 @@ export default {
 #root {
   height: 100%;
   position: relative;
-  background-image: url('./assets/bg1.jpg');
+  background-image: url('./assets/new_year.png');
   background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -442,7 +442,7 @@ export default {
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
   p {
-    color: red;
+    color: yellow;
     font-size: 50px;
     line-height: 120px;
   }
